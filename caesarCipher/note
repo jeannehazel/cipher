@@ -1,0 +1,61 @@
+
+  Problem: "DSSOH" (Shift: +3, Hint: Decode to find a fruit.)
+    Answer: "APPLE"
+  Explanation: Shifting each letter in "DSSOH" by -3 gives "APPLE."
+  
+  Problem: "OLIH" (Shift: +7, Hint: Decode to find something precious.)
+  
+  Answer: "LIFE"
+  Explanation: Shifting each letter in "OLIH" by -7 gives "LIFE."
+  Problem: "VWD\ ZD" (Shift: -3, Hint: Find the type of day using the hint 'weather'.)
+  
+  Answer: "SUN NY DAY"
+  Explanation: Shifting each letter in "VWD\ ZD" by +3 gives "SUN NY DAY."
+  Problem: "BRX DUH GRLQJ JUHDW" (Shift: +3, Hint: A positive affirmation.)
+  
+  Answer: "YOU ARE DOING GREAT"
+  Explanation: Shifting each letter in "BRX DUH GRLQJ JUHDW" by -3 gives "YOU ARE DOING GREAT."
+  Problem: "Frpsxwhuv duh dq dpdflqj wrro" (Shift: +23, Hint: What you're working on now.)
+  
+  Answer: "Computers are amazing tool"
+  Explanation: Shifting each letter in "Frpsxwhuv duh dq dpdflqj wrro" by -23 gives "Computers are amazing tool."
+  Problem: "Irfnhglqj lv ixq" (Shift: +5, Hint: Fun online activity.)
+  
+  Answer: "Gaming is fun"
+  Explanation: Shifting each letter in "Irfnhglqj lv ixq" by -5 gives "Gaming is fun."
+  Problem: "C1ph3r$" (Shift: +2, Hint: The type of problem you're solving.)
+  
+  Answer: "Cipher"
+  Explanation: Shifting each character in "C1ph3r$" by -2 gives "Cipher."
+  Problem: "Wh#lryh" (Shift: +10, Hint: A holiday about love.)
+  
+  Answer: "Valentine"
+  Explanation: Shifting each letter in "Wh#lryh" by -10 gives "Valentine."
+  Problem: "Xqlfrup lv zrun zhd#" (Shift: +3, Hint: Something a professional wears.)
+  
+  Answer: "Uniform is work wear"
+  Explanation: Shifting each letter in "Xqlfrup lv zrun zhd#" by -3 gives "Uniform is work wear."
+  Problem: "Wklv lv d wudi ilwwoh frgh" (Shift: +3, Hint: Phrase about a challenge.)
+  
+  Answer: "This is a tough little code"
+  Explanation: Shifting each letter in "Wklv lv d wudi ilwwoh frgh" by -3 gives "This is a tough little code."
+  Problem: "Gdqflqj lv olnh dwfrqwlrq" (Shift: +8, Hint: A performance art.)
+  
+  Answer: "Dancing is like recreation"
+  Explanation: Shifting each letter in "Gdqflqj lv olnh dwfrqwlrq" by -8 gives "Dancing is like recreation."
+  Problem: "Ndoo rqh urro pdvwhu!" (Shift: -5, Hint: Encouraging cheer for an achievement.)
+  
+  Answer: "Good job well done!"
+  Explanation: Shifting each letter in "Ndoo rqh urro pdvwhu!" by +5 gives "Good job well done!"
+  Problem: "Irxqgdwlrqv duh furfldo!" (Shift: -5, Hint: Important building blocks.)
+  
+  Answer: "Foundations are crucial!"
+  Explanation: Shifting each letter in "Irxqgdwlrqv duh furfldo!" by +5 gives "Foundations are crucial!"
+  Problem: "H?dvw&=Jo2u" (Shift: +3, Hint: A puzzle mix of letters and numbers.)
+  
+  Answer: "Easy&=Kr2x"
+  Explanation: Shifting each character in "H?dvw&=Jo2u" by -3 gives "Easy&=Kr2x."
+  Problem: "Txlv lv wkh ilqdo ohyho" (Shift: +3, Hint: End of the game.)
+  
+  Answer: "This is the final level"
+  Explanation: Shifting each letter in "Txlv lv wkh ilqdo ohyho" by -3 gives "This is the final level."

@@ -1,0 +1,91 @@
+
+<!-- play.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play - Caesar Cipher Quest</title>
+  <link rel="stylesheet" href="css/play.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=send" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top-container">
+            <header>
+                <h3>CC  Q<span>U</span>E<span>S</span>T</h3>
+            </header>
+            <div class="landing-options">
+              <a href="play.html"><button class="landing-btn">Play</button></a>
+              <a href="practice.html"><button  class="landing-btn">Practice</button></a>
+              <a href="tutorial.html"><button class="landing-btn">Tutorial</button></a>
+            </div>
+        </div>
+        
+        <div class="body-container">
+            <div class="bodycontent">
+              <div class="level-selection">
+               
+                <button class="level-btn" onclick="startLevel(1)">1</button>
+                <button class="level-btn" onclick="startLevel(2)">2</button>
+                <button class="level-btn" onclick="startLevel(3)">3</button>
+                <button class="level-btn" onclick="startLevel(4)">4</button>
+                <button class="level-btn" onclick="startLevel(5)">5</button>
+                <button class="level-btn" onclick="startLevel(6)">6</button>
+                <button class="level-btn" onclick="startLevel(7)">7</button>
+                <button class="level-btn" onclick="startLevel(8)">8</button>
+                <button class="level-btn" onclick="startLevel(9)">9</button>
+                <button class="level-btn" onclick="startLevel(10)">10</button>
+                <button class="level-btn" onclick="startLevel(11)">11</button>
+                <button class="level-btn" onclick="startLevel(12)">12</button>
+                <button class="level-btn" onclick="startLevel(13)">13</button>
+                <button class="level-btn" onclick="startLevel(14)">14</button>
+                <button class="level-btn" onclick="startLevel(15)">15</button>
+
+              </div>
+              <a href="index.html"><button class="back-btn">Back to <span>Menu</span></button></a>
+            </div>
+
+            <div class="level-solver" id="levelSolver" style="display: none;">
+              <div class="level-problem">
+                <button class="close-btn" onclick="closeLevelSolver()">x</button>
+                <p class="problem-display" id="problemText"><strong></strong></p>
+                <p id="problemShift"></p>
+                <div class="hint-line">
+                  <button onclick="toggleHint()">
+                    <span id="hintIcon" class="hint-icon">💡</span>
+                  </button>
+                  <span id="hintText" class="hint-text"></span> 
+                </div>
+              </div>
+  
+  
+              <div class="console-box">
+                <h4>CRACK THE <span>CODE</span></h4>
+                
+                <div class="answerChecker">
+                  <p> </p>
+                </div>
+
+                <div class="userAnswer">
+                  <input type="text" id="userAnswer" placeholder="Enter your answer" />
+                  <button onclick="checkAnswer()"><span class="material-symbols-outlined">send</span></button>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+        </div>
+
+
+ 
+    </div>
+  
+    <script src="js/play.js"></script>
+
+  </body>
+</html>

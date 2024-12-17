@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color--: #000000;
+  --buttons-color--: #e49a07;
+  --abv-text--: #ffffff;
+  --buttons-hover--: #26b5fc;
+  --lvlbuttons-color--: #a97103;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: var(--bg-color--);
+  color: #fff;
+  margin: 0;
+  height: 100vh; 
+  position: relative; 
+}
+
+h1 {
+  color: var(--buttons-color--);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+span{
+  color: var(--buttons-color--);
+}
+
+
+button {
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent; 
+  color: var(--abv-text--);
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none; 
+  transform: 0.5s ease, color 0.5s ease;
+}
+
+
+button:hover {
+  color: var(--buttons-color--);
+  transform: scale(1.1);
+}
+
+
+.container {
+  padding: 0px 15px;
+  position: relative; 
+  z-index: 1;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.body-container {
+  padding-top: 50px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: calc(100vh - 10rem);
+  
+}
+
+/* Pseudo element para ilawm ang bg */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/bg.png') no-repeat center center;
+  filter: blur(3px);
+  background-size: cover;
+  opacity: 0.1; 
+  z-index: -1; 
+}
+.level-selection {
+  background-color: #c2bdbd46;
+  border: 3px ridge  var(--lvlbuttons-color--);
+  width: 20rem;
+  height: 30rem;
+  border-radius: 20px;
+  align-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.level-btn {
+    margin: 10px;
+    padding: 20px 25px;
+    background-color: var(--lvlbuttons-color--);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+
+  }
+
+
+.level-btn:hover{
+  color: var(--abv-text--);
+  background-color: var(--buttons-color--);
+  transform: scale(1.1);
+}
+
+
+.level-solver {
+  display: none; 
+  flex-direction: column; /* Ensures proper layout when visible */
+  gap: 1.3em;
+}
+.level-problem {
+  position: relative;
+  margin-left: 25px;
+  background-color: #c2bdbd46;
+  width: 25rem;
+  height: 10rem;
+  border-radius: 20px;
+  align-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border: 3px double var(--lvlbuttons-color--);
+}
+
+.console-box {
+  width: 24rem;
+  height: 17rem;
+  border: 3px double var(--lvlbuttons-color--);
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #c2bdbd46;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.console-box input {
+  padding: 6px;
+  font-size: 12px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.console-box button {
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: var(--lvlbuttons-color--);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.console-box button:hover {
+  background-color: var(--buttons-color--);
+}
+
+
+.material-symbols-outlined {
+  color:var(--abv-text--)
+}
+
+
+
+.close-btn {
+  background-color: var(--lvlbuttons-color--);
+  color: var(--abv-text--);
+  border-radius: 50%; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  width: 20px; 
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: var(--lvlbuttons-color--);
+  background-color: var(--abv-text--); 
+  transform: rotate(360deg); 
+}
+
+
+.back-btn{
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+  
+
+.back-btn:hover{
+  color: var(--abv-text--);
+  transform: scale(1.1);
+}
+
+.hint-line{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+ .hint-text{
+  visibility: hidden;
+}
+
+.level-problem .hint-icon {
+  cursor: pointer;
+}
+
+.level-problem .hint-text {
+  font-size: 15px;
+  color: #bfbebe; 
+}
+
+.userAnswer{
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 4rem;
+}
+
+/* Completed levels - change button color */
+.level-btn.completed {
+  background-color: #4caf50; /* Green for completed levels */
+  color: white;
+}
+
+/* Current level - add a white border */
+.level-btn.current {
+  border: 2px solid white; /* Highlight the active level */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+a.active {
+  color: #e49a07;
+}
+
+a.active button {
+  color: #e49a07;
+}
+
+a.active button:hover {
+  color: #fff; 
+}
+
+
+
+
+/* Responsive Design */
+
+/* For screens up to 1024px (e.g., tablets) */
+@media screen and (max-width: 1024px) {
+  .level-problem,
+  .console-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .console-box input {
+    font-size: 14px;
+  }
+
+  .userAnswer input,
+  .userAnswer button {
+    font-size: 14px;
+  }
+}
+
+/* For screens up to 768px (e.g., small tablets & large phones) */
+@media screen and (max-width: 768px) {
+  .body-container {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .level-problem,
+  .console-box {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .userAnswer {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .userAnswer input {
+    font-size: 14px;
+    width: 93%;
+    padding: 10px;
+  }
+
+  .userAnswer button {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* For screens up to 480px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+  .body-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  /* Level Selection Container */
+  .level-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .level-selection button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+  }
+
+  /* Problem Section */
+  .level-problem {
+    width: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .level-problem h1 {
+    font-size: 1.4rem;
+    margin: 5px 0;
+  }
+
+  /* Answer Section */
+  .console-box {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .userAnswer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .userAnswer input {
+    font-size: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .userAnswer button {
+    font-size: 12px;
+    padding: 8px;
+    background-color: #d4911e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .userAnswer button:hover {
+    background-color: #b37719;
+  }
+}
